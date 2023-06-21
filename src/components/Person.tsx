@@ -1,9 +1,4 @@
-type personprops = {
-    nam:{
-    first: string,
-    last: string
-    }
-}
+import {personprops} from './Person.types';
 export const Person = (props:personprops) => {
     return (
         <div>
