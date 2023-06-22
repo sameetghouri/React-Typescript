@@ -12,6 +12,8 @@ import { Status } from './components/Status';
 import { Box } from './components/context/Box';
 import { ThemeContextProvider } from './components/context/ThemeContext';
 import { ReducerCounter } from './components/state/ReducerCounter';
+import { UserContextProvider } from './components/context/UserContext';
+import { User } from './components/context/User';
 
 function App() {
   const personNam ={
@@ -52,6 +54,11 @@ function App() {
       <ThemeContextProvider>
         <Box/>
       </ThemeContextProvider>
+
+      <UserContextProvider>
+        <User/>
+      </UserContextProvider>
+
     </div>
 
   );
