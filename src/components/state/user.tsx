@@ -21,4 +21,4 @@ export const User =()=>{
             <div>User email is{user?.email}</div>
         </div>
     )
-}
+} 

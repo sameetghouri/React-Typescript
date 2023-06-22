@@ -9,6 +9,7 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { Personlist } from './components/Personlist';
 import { Status } from './components/Status';
+import { ReducerCounter } from './components/state/ReducerCounter';
 
 function App() {
   const personNam ={
@@ -43,7 +44,8 @@ function App() {
       }}/>
       <Input value='' handlechange={(event)=>{console.log(event)}}/>
       
-      <Container style={{border:'1px solid black', padding:'1rem'}}/>
+      <Container style={{border:'2px solid black',margin:'10px', padding:'1rem'}}/>
+      <ReducerCounter/>
     </div>
 
   );
