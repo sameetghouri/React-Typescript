@@ -14,6 +14,10 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import { ReducerCounter } from './components/state/ReducerCounter';
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from './components/context/User';
+import { Counter } from './components/class/Counter';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
 
 function App() {
   const personNam ={
@@ -59,6 +63,22 @@ function App() {
         <User/>
       </UserContextProvider>
 
+      <Counter message='The Count is: '/>
+
+      <Private isLoggedIn={true} Component={Profile}/>
+
+      <List items={['Blue', 'Green', 'Red']}
+        onClick={(item)=>{console.log(item)}}
+      />
+      <List items={['1', '2', '3']}
+        onClick={(item)=>{console.log(item)}}
+      />
+      <List items={[{first:'bruce', last:'wayne'}, 
+      {first:'clark', last:'kent'}, 
+      {first:'diana', last:'prince'}]}
+        onClick={(item)=>{console.log(item)}}
+      />
+      
     </div>
 
   );
