@@ -20,6 +20,8 @@ import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/Templateliterals/Toast';
+import { CustomButton } from './components/html/CustomButton';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
   const personNam ={
@@ -85,6 +87,13 @@ function App() {
       <RandomNumber value={10} isPositive={true} />
       
       <Toast position='left-bottom'/>
+
+      <CustomButton varient='primary' onClick={()=>{console.log('clicked')}}>Primary Button</CustomButton>
+    
+      <Text as='h1' size='lg' >Heading</Text>
+      <Text as='p' size='md' >Paragraph</Text>
+      <Text as='label' size='sm' color='secondary' >Label</Text>
+    
     </div>
 
   );
