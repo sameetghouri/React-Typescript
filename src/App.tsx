@@ -60,7 +60,7 @@ function App() {
       <Input value='' handlechange={(event)=>{console.log(event)}}/>
       
       <Container style={{border:'2px solid black',margin:'10px', padding:'1rem'}}/>
-      <ReducerCounter/>
+      <ReducerCounter/> 
 
       <ThemeContextProvider>
         <Box/>
