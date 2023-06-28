@@ -10,7 +10,7 @@ const theme = {
     },
     secondary: {
         main: '#f50057',
-        text: '#fff'
+        text: '#fff'  
     }
 }
 

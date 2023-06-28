@@ -22,6 +22,7 @@ import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/Templateliterals/Toast';
 import { CustomButton } from './components/html/CustomButton';
 import { Text } from './components/polymorphic/Text';
+import { DomRef } from './components/ref/DomRef';
 
 function App() {
   const personNam ={
@@ -57,7 +58,7 @@ function App() {
       <Button handleClick={(event,id)=>{
         console.log('button clicked',event,id )
       }}/>
-      <Input value='' handlechange={(event)=>{console.log(event)}}/>
+      <Input value='AK' handlechange={(event)=>{console.log(event)}}/>
       
       <Container style={{border:'2px solid black',margin:'10px', padding:'1rem'}}/>
       <ReducerCounter/> 
@@ -70,6 +71,7 @@ function App() {
         <User/>
       </UserContextProvider>
 
+      <DomRef/>
       <Counter message='The Count is: '/>
 
       <Private isLoggedIn={true} Component={Profile}/>

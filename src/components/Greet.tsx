@@ -4,7 +4,7 @@ type greetprops = {
     isloggedIn: boolean
 }
 export const Greet =(props:greetprops)=>{
-    const {messagecount = 0} = props //if no value is passed then it will default to 0 
+    const {messagecount = 0} = props //if no value is passed then messagecount will default to 0 
     return (
         <div>
         <h2>

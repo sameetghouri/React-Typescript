@@ -9,5 +9,5 @@ export const Input =(props:inputprops)=>{
     return(
         <input type='text' value={props.value} onChange={props.handlechange}/>
         // <input type='text' value={props.value} onChange={handleinputchange}/>
-    )
+    ) 
 }
