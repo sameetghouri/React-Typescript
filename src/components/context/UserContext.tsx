@@ -13,10 +13,11 @@ type usercontextproviderprops={
 }
 // export const UserContext=createContext<usercontextType | null>(null)
 
-//we are using Type assertion instead
+//we are using Type assertion instead to avoid the if check in User.tsx
 export const UserContext=createContext({} as usercontextType)
 export const UserContextProvider=(props:usercontextproviderprops)=>{
     const [User,setUser]=useState<null|authuser>(null)
+
     return(
         <UserContext.Provider value={{User,setUser}}>
             {props.children}

@@ -23,6 +23,7 @@ import { Toast } from './components/Templateliterals/Toast';
 import { CustomButton } from './components/html/CustomButton';
 import { Text } from './components/polymorphic/Text';
 import { DomRef } from './components/ref/DomRef';
+import { MutableRef } from './components/ref/MutableRef';
 
 function App() {
   const personNam ={
@@ -72,6 +73,7 @@ function App() {
       </UserContextProvider>
 
       <DomRef/>
+      <MutableRef/>
       <Counter message='The Count is: '/>
 
       <Private isLoggedIn={true} Component={Profile}/>

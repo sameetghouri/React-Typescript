@@ -14,13 +14,16 @@ export const MutableRef = () => {
         intervalRef.current=window.setInterval(()=>{
             settimer(timer=>timer+1)
         },1000) 
+
+    //when the component unmounts below code will run
         return ()=>{
             stopTimer()
         }
     },[])
     return (
-        <div>
-            HookTimer - {timer}
+        <div style={{margin:'20px'}}>
+            Mutable Ref : Timer - {timer} 
+            <br/>
             <button onClick={()=>stopTimer()}>Stop Timer</button>
         </div>
     )
