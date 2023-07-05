@@ -13,7 +13,7 @@ export const MutableRef = () => {
     useEffect(()=>{
         intervalRef.current=window.setInterval(()=>{
             settimer(timer=>timer+1)
-        },1000)
+        },1000) 
         return ()=>{
             stopTimer()
         }

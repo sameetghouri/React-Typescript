@@ -50,10 +50,10 @@ function App() {
     <div className="App">
       <Person nam={personNam}/>
       <Personlist nam={namlist}/>
-      <Status status='loading'/>
+      <Status status='success'/>
       
       <Oscar><Heading>Oscar goes to the movies</Heading></Oscar>
-      <Greet nam='Ali' isloggedIn={false}/>
+      <Greet nam='Ali' isloggedIn={true}/>
       
       <Button handleClick={(event,id)=>{
         console.log('button clicked',event,id )
