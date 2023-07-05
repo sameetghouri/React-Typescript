@@ -22,7 +22,7 @@ export const MutableRef = () => {
     },[])
     return (
         <div style={{margin:'20px'}}>
-            Mutable Ref : Timer - {timer} 
+            Mutable Ref Timer : {timer} 
             <br/>
             <button onClick={()=>stopTimer()}>Stop Timer</button>
         </div>

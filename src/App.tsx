@@ -76,7 +76,7 @@ function App() {
       <MutableRef/>
       <Counter message='The Count is: '/>
 
-      <Private isLoggedIn={true} Component={Profile}/>
+      <Private isLoggedIn={true} PComponent={Profile}/>
 
       {/* <List items={['Blue', 'Green', 'Red']}
         onClick={(item)=>{console.log(item)}}
